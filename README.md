@@ -1,7 +1,9 @@
 # shimmy
 
 Shimmy provides directional window position adjustments using
-keyboard shortcuts on macOS.  
+keyboard shortcuts on macOS.
+
+https://github.com/user-attachments/assets/b65d4798-456e-42fc-a999-f6292e7d722b
 
 This isn't a complete window management tool, but rather a way to simply nudge
 windows in a direction without having to use the mouse. Best used in conjunction
