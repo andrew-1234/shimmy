@@ -31,17 +31,17 @@ func NewMoveProps(distance int, direction string) (MoveProps, error) {
 	return MoveProps{x, y, direction}, nil
 }
 
-func MoveWindow(props *MoveProps) {
+func MoveWindow(props *MoveProps) error {
 	// Get the active window
 	// Returns MData struct with field AxID: contains AXUIElementRef
 	activeWindow := robotgo.GetActive()
 	windowRef := activeWindow.AxID
 	// check if the window is valid
 	if windowRef == 0 {
-		fmt.Println("Error: could not get active window")
-		return
+		return fmt.Errorf("could not get active window")
 	}
 	callMoveWindow(C.AXUIElementRef(windowRef), props.X, props.Y)
+	return nil
 }
 
 func callMoveWindow(window C.AXUIElementRef, x, y int) {

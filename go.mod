@@ -2,8 +2,6 @@ module github.com/andrew-1234/shimmy
 
 go 1.22.1
 
-require github.com/urfave/cli/v2 v2.27.3
-
 require (
 	github.com/gen2brain/shm v0.0.0-20230802011745-f2460f5984f7 // indirect
 	github.com/go-ole/go-ole v1.3.0 // indirect
@@ -29,9 +27,6 @@ require (
 )
 
 require (
-	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
 	github.com/go-vgo/robotgo v0.110.1
 	github.com/robotn/gohook v0.41.0
-	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 )

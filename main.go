@@ -76,23 +76,35 @@ func initMovePropsMap(distance int) map[string]mover.MoveProps {
 func registerMoveHooks() {
 	hook.Register(hook.KeyDown, []string{"cmd", "ctrl", "right"}, func(sch hook.Event) {
 		movePropsRight := movePropsMap["right"]
-		mover.MoveWindow(&movePropsRight)
+		err := mover.MoveWindow(&movePropsRight)
+		if err != nil {
+			fmt.Println(err)
+		}
 	})
 
 	hook.Register(hook.KeyDown, []string{"cmd", "ctrl", "left"}, func(sch hook.Event) {
 		movePropsLeft := movePropsMap["left"]
-		mover.MoveWindow(&movePropsLeft)
+		err := mover.MoveWindow(&movePropsLeft)
+		if err != nil {
+			fmt.Println(err)
+		}
 	})
 
 	hook.Register(hook.KeyDown, []string{"cmd", "ctrl", "up"}, func(sch hook.Event) {
 		movePropsUp := movePropsMap["up"]
-		mover.MoveWindow(&movePropsUp)
+		err := mover.MoveWindow(&movePropsUp)
+		if err != nil {
+			fmt.Println(err)
+		}
 	})
 
 	// My down arrow doesn't register a KeyDown event but using KeyHold works
 	hook.Register(hook.KeyHold, []string{"cmd", "ctrl", "down"}, func(sch hook.Event) {
 		movePropsDown := movePropsMap["down"]
-		mover.MoveWindow(&movePropsDown)
+		err := mover.MoveWindow(&movePropsDown)
+		if err != nil {
+			fmt.Println(err)
+		}
 	})
 
 }
