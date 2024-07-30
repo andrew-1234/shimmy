@@ -1,5 +1,7 @@
 # shimmy
 
+![Build](https://github.com/andrew-1234/shimmy/actions/workflows/go.yml/badge.svg)
+
 Shimmy provides directional window position adjustments using
 keyboard shortcuts on macOS.
 
