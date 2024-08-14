@@ -2,15 +2,15 @@
 
 ![Build](https://github.com/andrew-1234/shimmy/actions/workflows/go.yml/badge.svg)
 
-Shimmy provides directional window position adjustments using
-keyboard shortcuts on macOS.
+Shimmy is a lightweight utility designed for macOS users who need quick and
+precise control over their window positions. It allows users to nudge windows in
+any direction using customisable global keyboard shortcuts. Unlike full-fledged
+window management tools, Shimmy focuses on providing simple directional
+adjustments, making it a perfect companion to other window management solutions.
+
 
 https://github.com/user-attachments/assets/b65d4798-456e-42fc-a999-f6292e7d722b
 
-This isn't a complete window management tool, but rather a way to simply nudge
-windows in a direction without having to use the mouse. Best used in conjunction
-with a window management tool or native macOS window arrangement keyboard
-shortcuts.
 
 ## Requirements
 
